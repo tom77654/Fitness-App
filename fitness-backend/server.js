@@ -39,7 +39,7 @@ app.post("/register", (req, res) => {
     if (err) {
       return res.status(500).send("Fehler beim Hashen");
     }
-
+    // SQL-Query zum Einfügen des neuen Users
     const sql =
       "INSERT INTO users (username, email, password) VALUES (?, ?, ?)";
     db.query(sql, [username, email, hash], (err, results) => {
@@ -54,17 +54,18 @@ app.post("/register", (req, res) => {
 // Endpunkt zur Prüfung, ob ein Benutzername bereits vergeben ist
 app.get("/check-username", (req, res) => {
   const { username } = req.query;
+  
   if (!username) {
     return res.status(400).json({ exists: false, message: "Kein Benutzername angegeben" });
   }
-
+// SQL-Abfrage zum Prüfen, ob username existiert
   const sql = "SELECT * FROM users WHERE username = ?";
   db.query(sql, [username], (err, results) => {
     if (err) {
       console.error("Fehler bei der DB-Abfrage:", err);
       return res.status(500).json({ exists: false, message: "Datenbankfehler" });
     }
-
+      // Wenn Ergebnis vorhanden: Username ist vergeben
     if (results.length > 0) {
       return res.json({ exists: true }); // Benutzername gibts schon
     } else {

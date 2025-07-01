@@ -25,7 +25,7 @@ useEffect(() => {
   const handleStartTraining = () => {
     navigate('/trainingsplan');
   };
-
+  // Lade Fortschritt von API, wenn Komponente geladen wird
   useEffect(() => {
     const fetchProgress = async () => {
       try {
@@ -49,7 +49,7 @@ useEffect(() => {
 }, [level]);
 
 
-console.log('Aktueller Fortschritt im State:', progress);
+
   return (
     <div className="content">
       

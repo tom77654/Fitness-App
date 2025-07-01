@@ -5,7 +5,9 @@ export default function Header() {
   const [username, setUsername] = useState('');
 
   useEffect(()=>{
+    // Benutzernamen aus localStorage auslesen
     const name=localStorage.getItem('username');
+    // Falls ein Name gefunden wurde, State aktualisieren
     if(name){
       setUsername(name);
     }

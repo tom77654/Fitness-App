@@ -8,7 +8,7 @@ export default function ExerciseModal({ exercise, onClose }) {
   return (
     <div className="modal-backdrop" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        <button className="close-button" onClick={onClose}>×</button>
+        <button className="close-button" onClick={onClose}>schließen</button>
         <h2>{exercise.name}</h2>
         <ExerciseDetails exercise={exercise} />
       </div>

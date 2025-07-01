@@ -11,6 +11,7 @@ export default function Cards() {
 
   const [showInfo, setShowInfo] = useState(false);
   const navigate = useNavigate();
+  // Definition der verfügbaren Fitness-Level mit Beschreibung und Bild
   const levels = [
     {
       id: 'beginner',
@@ -36,6 +37,7 @@ export default function Cards() {
     console.log("Level ausgewählt:", level);
     try {
       const token = localStorage.getItem('token');
+      // Level auf Server speichern (API mit Auth-Header)
       await axios.put('http://localhost:3001/user/level', 
         { level: level.id }, 
         {
@@ -49,7 +51,7 @@ export default function Cards() {
   headers: { Authorization: `Bearer ${token}` }
 });
 
-
+    //Level local speichern
       localStorage.setItem('level', level.id);
       
       navigate('/hauptseite');

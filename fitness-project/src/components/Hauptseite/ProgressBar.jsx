@@ -6,10 +6,9 @@ import '../../styles/Apex.css';
 
 
 const ProgressBar = ({value}) => {
-  console.log('ProgressBar Wert:', value);
   const safeValue = Number(value) || 0;
   
-  
+    // Optionen für den radialen Fortschrittsbalken
     const options= {
       chart: {
         height: 350,
@@ -39,8 +38,8 @@ const ProgressBar = ({value}) => {
   return (
     <div id="chart">
       <ReactApexChart
-        options={options}
-        series={[safeValue]}
+        options={options}     //Konfiguration der Progressbar
+        series={[safeValue]}  //Datenreihe mit dem fortschrittswert
         type="radialBar"
         height={350}
         
