@@ -1,0 +1,147 @@
+.trainingsplan-only{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+  font-size: 14px;
+}
+.trainingsplan-only h1{
+  font-size: 45px;
+  
+}
+
+
+.exercise-list {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.exercise-list h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.exercise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1000px;
+  
+}
+
+.exercise-card {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  height: 100%; 
+}
+
+.exercise-card:hover {
+  background-color: lightgray;
+}
+
+.exercise-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  
+}
+
+.exercise-info {
+  padding: 1rem;
+}
+
+.exercise-info h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.exercise-info p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+h3{
+  color: black;
+}
+
+select{
+  font-size: 20px;
+  border-color: lightseagreen;
+}
+label{
+  font-size: 20px;
+}
+.muscle-group-info{
+  
+  font-size: 1rem;
+  color: #555;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+}
+
+.button-more-info{
+  background-color: orange;
+  width: 133px;
+  height: 35px;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 20px;
+  
+}
+        
+.checkbox1{
+  
+  accent-color: lightseagreen;
+  width: 15px;
+  height: 15px;
+  
+}
+
+
+
+.trainingstage-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.trainingstag-row {
+  flex: 1 1 220px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 280px;
+  padding: 6px 10px;
+  border: 1px solid lightseagreen;
+  border-radius: 6px;
+}
+
+.trainingstag-label {
+  font-weight: 300;
+  
+}
+
+
+
+
+
+
+
+
+
+

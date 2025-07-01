@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+
+.header-overlay {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('../assets/hauptseite.jpg') center/cover no-repeat;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.header-top .header-links {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.header-links a {
+  color: lightseagreen;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.header-links a:hover {
+  text-decoration: underline;
+}
+
+.header-center h1 {
+  margin-top: 500px;
+  font-size: 36px;
+  margin-bottom: 10px;
+
+}
+
+
+.tipp-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+#button2 {
+  background-color: #e68900;
+  color: white;
+  font-size: 15px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  transition: background 0.3s ease;
+}
+
+#button2:hover {
+  background-color: lightseagreen;
+}
+
+#tipp-text {
+  color: #eee;
+  font-style: italic;
+}
+
+
+.content {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: lightseagreen;
+}
+
+.content p {
+  font-size: 17px;
+  color: lightgray;
+  margin-bottom: 30px;
+}
+
+
+.button, #button1 {
+  background: lightseagreen;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover, #button1:hover {
+  box-shadow: 0 0 10px lightseagreen;
+}
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.card-hauptseite {
+  background: #2c2c2c;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.card-hauptseite:hover {
+  transform: translateY(-5px);
+}
+
+.card-hauptseite h3 {
+  color: #e68900;
+  margin-bottom: 10px;
+}
+
+.card-hauptseite p {
+  color: #ccc;
+  font-size: 16px;
+}
+
+.tipp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+

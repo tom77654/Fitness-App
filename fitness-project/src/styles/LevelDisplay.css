@@ -1,0 +1,13 @@
+.level-display {
+  position: absolute;
+  top: 2%;
+  left:82%;
+  background-color: orange;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 22px;
+  
+}
+  

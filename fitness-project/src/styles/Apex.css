@@ -1,0 +1,10 @@
+#chart {
+  position: fixed;
+  bottom: 390px;
+  right: -5px;
+  z-index: 1000;
+  padding: 10px;
+  border-radius: 12px;
+  color: lightseagreen;
+  
+}
